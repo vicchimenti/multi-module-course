@@ -39,9 +39,11 @@ try {
 
 
 
-    var contentItemNameStr = contentItemName.toString();
-    var commonNameArray = contentItemNameStr.split(":");
-    var commonName = commonNameArray[0];
+    // var contentItemNameStr = contentItemName.toString();
+    // var commonNameArray = contentItemNameStr.split(":");
+    // var commonName = commonNameArray[0];
+
+    var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
 
 
 
@@ -63,13 +65,13 @@ try {
     document.write('<div class="card">'); // closed individually in *** write closing tags *** found near bottom of file currently line 142
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, cardHeader));
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonLink));
-    document.write('<span class="contentItemNameWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="contentItemName">' + prefix + " " + commonName + '</span></span></button>');  // close buttonLink tag here
+    document.write('<span class="contentItemNameWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="contentItemName">' + courseTitle + '</span></span></button>');  // close buttonLink tag here
 
 
     /* -- Write the open viewable summary header -- */
     document.write('<div class="col-xs-12 courseSummaryWrapper">');
     document.write('<div class="row col-xs-12 courseSummaryHeader">');
-    document.write('<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseName + '</span></div>');
+    document.write('<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseType + '</span></div>');
     document.write('<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div>');
     document.write('<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
     document.write('<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
@@ -128,7 +130,7 @@ try {
     // prerequisites re-branded as Comments
     if (prerequisites != "") {
         document.write('<div class="row col-xs-12 levelFour">');
-        document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Comments: </h5><div class="courseInfo">' + prerequisites + '</div></div>');
+        document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Comments: </h5><div class="courseInfo">' + comments + '</div></div>');
         document.write('</div>');
     } else {
         document.write('<div class="row levelFour courseDetails prerequisites" style="display: none";><h5>No Comments Provided</h5></div>');
