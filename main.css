@@ -82,12 +82,6 @@ div.courseInfo {
     padding-right: 5px;
 }
 
-/* #zoneA.col-md-9 .standardContent .btn span.courseTitleWrapper span.courseTitle {
-    color: #aa0000;
-    font-size: 1.8rem;
-    font-weight: 700;
-} */
-
 #zoneA.col-md-9 .standardContent .btn .fa-plus {
     display: none;
 }
@@ -319,12 +313,6 @@ div.courseInfo {
     font-weight: 700;
 }
 
-/* #zoneA.col-sm-8 .standardContent .btn span.courseTitleWrapper span.courseTitle {
-    color: #aa0000;
-    font-size: 1.8rem;
-    font-weight: 700;
-} */
-
 #zoneA.col-sm-8 .standardContent .btn:hover span.courseTitle {
     text-decoration: underline;
 }
@@ -388,12 +376,6 @@ div.courseInfo {
         text-align: left;
         text-decoration: none;
     }
-
-    /* #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent button.btn span.courseTitleWrapper span.courseTitle {
-        color: #aa0000;
-        font-size: 1.8rem;
-        font-weight: 700;
-    } */
 
     #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card div.courseSummaryWrapper {
         margin-bottom: 5px;
