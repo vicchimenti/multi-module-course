@@ -27,6 +27,12 @@ span.courseTitle {
     font-weight: 550;
 }
 
+span.courseTitle {
+    color: #aa0000;
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+
 span.courseType {
     font-size: 1.7rem;
     font-weight: 550;
