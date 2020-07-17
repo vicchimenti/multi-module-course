@@ -11,7 +11,7 @@
 *
 *     Document will write once when the page loads
 *
-*     @version 1.0
+*     @version 1.1
 */
 
 
@@ -37,14 +37,8 @@ try {
     var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Keywords' output='normal' display_field='value' />");
 
 
-
-
-    // var contentItemNameStr = contentItemName.toString();
-    // var commonNameArray = contentItemNameStr.split(":");
-    // var commonName = commonNameArray[0];
-
+    /* -- Derive the Course Title -- */
     var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
-
 
 
     /* -- Wrap the content fields -- */
@@ -102,7 +96,7 @@ try {
         document.write('<div class="col-xs-12 courseDetails syllabus"><h5>Syllabus: </h5><div class="courseInfo">' + syllabus + '</div></div>');
         document.write('</div>');
     } else {
-        document.write('<div class="row levelOne courseDetails syllabus" style="display: none";><h5>No Syllabus Provided</h5></div>');
+        document.write('<div class="row levelOne courseDetails syllabus" style="display: none"><h5>No Syllabus Provided</h5></div>');
     }
 
 
@@ -112,7 +106,7 @@ try {
         document.write('<div class="col-xs-12 courseDetails assignments"><h5>Assignments: </h5><div class="courseInfo">' + assignments + '</div></div>');
         document.write('</div>');
     } else {
-        document.write('<div class="row levelTwo courseDetails assignments" style="display: none";><h5>No Assignments Provided</h5></div>');
+        document.write('<div class="row levelTwo courseDetails assignments" style="display: none"><h5>No Assignments Provided</h5></div>');
     }
 
 
@@ -122,7 +116,7 @@ try {
         document.write('<div class="col-xs-12 courseDetails textbooks"><h5>Textbooks: </h5><div class="courseInfo">' + textbooks + '</div></div>');
         document.write('</div>');
     } else {
-        document.write('<div class="row levelThree courseDetails textbooks" style="display: none";><h5>No Textbooks Provided</h5></div>');
+        document.write('<div class="row levelThree courseDetails textbooks" style="display: none"><h5>No Textbooks Provided</h5></div>');
     }
 
 
@@ -133,7 +127,7 @@ try {
         document.write('<div class="col-xs-12 courseDetails prerequisites"><h5>Comments: </h5><div class="courseInfo">' + comments + '</div></div>');
         document.write('</div>');
     } else {
-        document.write('<div class="row levelFour courseDetails prerequisites" style="display: none";><h5>No Comments Provided</h5></div>');
+        document.write('<div class="row levelFour courseDetails prerequisites" style="display: none"><h5>No Comments Provided</h5></div>');
     }
 
 
@@ -144,7 +138,7 @@ try {
         document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Common UCOR Course Description: </h5><div class="courseInfo">' + groupDescription + '</div></div>');
         document.write('</div>');
     } else {
-        document.write('<div class="row levelFive courseDetails groupDescription" style="display: none";><h5>No Common UCOR Course Description Provided</h5></div>');
+        document.write('<div class="row levelFive courseDetails groupDescription" style="display: none"><h5>No Common UCOR Course Description Provided</h5></div>');
     }
 
 
@@ -152,10 +146,10 @@ try {
     if (keyWords != "") {
         /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
         document.write('<div class="row col-xs-12 levelSix">');
-        document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none";><h5>Keywords</h5><div class="courseInfo">' + keyWords + '</div></div>');
+        document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none"><h5>Keywords</h5><div class="courseInfo">' + keyWords + '</div></div>');
         document.write('</div>');
     } else {
-        document.write('<div class="row levelSix courseDetails keyWords" style="display: none";><h5>No Keywords Provided</h5></div>');
+        document.write('<div class="row levelSix courseDetails keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
     }
 
 
