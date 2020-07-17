@@ -21,9 +21,21 @@ li {
     font-weight: 500;
 }
 
+span.courseTitle {
+    color: #aa0000;
+    font-size: 1.8rem;
+    font-weight: 550;
+}
+
 span.courseType {
     font-size: 1.7rem;
     font-weight: 550;
+}
+
+div.courseInfo {
+    display: block;
+    margin-bottom: 0;
+    width: 100%;
 }
 
 .standardContent h5 {
@@ -191,17 +203,17 @@ span.courseType {
     font-family: sans-serif;
 }
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo p {
+/* #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo p {
     display: block;
     margin-bottom: 0;
     width: 100%;
-}
+} */
 
-#zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo span {
+/* #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo span {
     display: block;
     margin-bottom: 0;
     width: 100%;
-}
+} */
 
 
 
@@ -260,17 +272,17 @@ span.courseType {
     text-decoration: underline;
 }
 
-#zoneA.col-xs-12 .standardContent div.courseInfo p {
+/* #zoneA.col-xs-12 .standardContent div.courseInfo p {
     display: block;
     margin-bottom: 0;
     width: 100%;
-}
+} */
 
-#zoneA.col-xs-12 .standardContent div.courseInfo span {
+/* #zoneA.col-xs-12 .standardContent div.courseInfo span {
     display: block;
     margin-bottom: 0;
     width: 100%;
-}
+} */
 
 #zoneA.col-xs-12 .standardContent div.courseSummaryHeader {
     margin-bottom: 1rem;
@@ -412,17 +424,17 @@ span.courseType {
         font-weight: 550;
     }
 
-    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo p {
+    /* #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo p {
         display: block;
         margin-bottom: 0;
         width: 100%;
-    }
+    } */
 
-    #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo span {
+    /* #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo span {
         display: block;
         margin-bottom: 0;
         width: 100%;
-    }
+    } */
 
     #zoneA.col-xs-12 .standardContent div.courseSummaryHeader {
         margin-bottom: 1rem;
