@@ -18,7 +18,7 @@
 
 try {
     /* -- Initialize function scope variables -- */
-    var contentItemName = content.get("Name");
+    var contentItemName = content.get("Name"); // variable is never used except as hidden search item
     var prefix = "UCOR";
     var ucorModule = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Module' output='normal' display_field='value' />");
     var courseType = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Course Type' output='normal' display_field='value' />");
@@ -59,7 +59,7 @@ try {
     document.write('<div class="card">'); // closed individually in *** write closing tags *** found near bottom of file currently line 142
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, cardHeader));
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonLink));
-    document.write('<span class="contentItemNameWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="contentItemName">' + courseTitle + '</span></span></button>');  // close buttonLink tag here
+    document.write('<span class="contentItemNameWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + courseTitle + '</span></span></button>');  // close buttonLink tag here
 
 
     /* -- Write the open viewable summary header -- */
@@ -143,6 +143,17 @@ try {
 
 
     /* -- Write Program Level 6 Details --*/
+    if (keyWords != "") {
+        /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
+        document.write('<div class="row col-xs-12 levelSix">');
+        document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none"><h5>Keywords</h5><div class="courseInfo">' + keyWords + '</div></div>');
+        document.write('</div>');
+    } else {
+        document.write('<div class="row levelSix courseDetails keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
+    }
+    
+
+    /* -- Write Program Level 7 Details --*/
     if (keyWords != "") {
         /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
         document.write('<div class="row col-xs-12 levelSix">');
