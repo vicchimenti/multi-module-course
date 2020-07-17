@@ -203,18 +203,6 @@ div.courseInfo {
     font-family: sans-serif;
 }
 
-/* #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo p {
-    display: block;
-    margin-bottom: 0;
-    width: 100%;
-} */
-
-/* #zoneA.col-md-9 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo span {
-    display: block;
-    margin-bottom: 0;
-    width: 100%;
-} */
-
 
 
 /**  xs default and targeted selectors  **/
@@ -271,18 +259,6 @@ div.courseInfo {
 #zoneA.col-xs-12 .standardContent .btn:hover span.courseTitle {
     text-decoration: underline;
 }
-
-/* #zoneA.col-xs-12 .standardContent div.courseInfo p {
-    display: block;
-    margin-bottom: 0;
-    width: 100%;
-} */
-
-/* #zoneA.col-xs-12 .standardContent div.courseInfo span {
-    display: block;
-    margin-bottom: 0;
-    width: 100%;
-} */
 
 #zoneA.col-xs-12 .standardContent div.courseSummaryHeader {
     margin-bottom: 1rem;
@@ -423,18 +399,6 @@ div.courseInfo {
         font-size: 1.75rem;
         font-weight: 550;
     }
-
-    /* #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo p {
-        display: block;
-        margin-bottom: 0;
-        width: 100%;
-    } */
-
-    /* #zoneA.col-xs-12 div.organizerWrapper div.organizer.standardContent div.courseItemWrapper div.courseItem.standardContent div.card-body div.courseDetails div.courseInfo span {
-        display: block;
-        margin-bottom: 0;
-        width: 100%;
-    } */
 
     #zoneA.col-xs-12 .standardContent div.courseSummaryHeader {
         margin-bottom: 1rem;
