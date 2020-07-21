@@ -53,4 +53,7 @@ div.js-t4form-container div.checkbox+.checkbox {
     .formPlaceholder form {
         font-size: small;
     }
+    .formPlaceholder .js-t4form-container .form-group.list-options.column2 .col-xs-12 {
+        display: inline-block;
+    }
 }
