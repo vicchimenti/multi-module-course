@@ -1,15 +1,15 @@
 /** grid overrides for radio buttons and checkboxes **/
 
-div.js-t4form-container div.form-group.list-options.4column div.col-xs-12 {
+div.js-t4form-container div.form-group div.form-group.list-options.4column div.col-xs-12 {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto
+  grid-template-rows: auto;
 }
 
-div.js-t4form-container form.js-main-container div.form-group.list-options.2column div.col-xs-12 {
+div.js-t4form-container form.js-main-container div.form-group div.form-group.list-options.2column div.col-xs-12 {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto
+  grid-template-rows: auto;
 }
 
 div.js-t4form-container div.radio+.radio {
