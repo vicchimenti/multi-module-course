@@ -1,22 +1,22 @@
 /** grid overrides for radio buttons and checkboxes **/
 
-.formPlaceholder.standardContent .js-t4form-container .form-group.js-input.list-options.2column .col-xs-12 {
+.formPlaceholder .js-t4form-container .form-group.list-options.column2 .col-xs-12 {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
 }
 
-.formPlaceholder.standardContent .js-t4form-container .form-group.js-input.list-options.4column .col-xs-12 {
+.formPlaceholder .js-t4form-container .form-group.list-options.column4 .col-xs-12 {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
 }
 
-.formPlaceholder.standardContent div.radio+.radio {
+.formPlaceholder .js-t4form-container div.radio+.radio {
     margin-top: auto;
 }
 
-.formPlaceholder.standardContent div.checkbox+.checkbox {
+.formPlaceholder .js-t4form-container div.checkbox+.checkbox {
     margin-top: auto;
 }
 
