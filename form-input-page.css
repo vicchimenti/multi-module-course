@@ -1,12 +1,12 @@
 /** grid overrides for radio buttons and checkboxes **/
 
-.js-t4form-container .form-group.list-options .col-xs-12 {
+.js-t4form-container .form-group.list-options.4column .col-xs-12 {
   display: inline-grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto
 }
 
-.js-t4form-container #ucorType.form-group.list-options .col-xs-12 {
+.js-t4form-container .form-group.list-options.2column .col-xs-12 {
   display: inline-grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto
