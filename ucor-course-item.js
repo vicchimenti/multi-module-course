@@ -11,10 +11,9 @@
 *
 *     Document will write once when the page loads
 *
-*     @version 2.3
+*     @version 2.4
 */
 
-<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />
 
 try {
     /* -- Initialize function scope variables -- */
@@ -84,8 +83,8 @@ try {
 
 
     /* -- Write the collapsed summary header -- */
-    // document.write('<div class="row col-xs-12 fullCourseDescriptionWrapper">');
-    // document.write('<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo">' + courseDescription + '</div></div></div>'); // close fullCourseDescriptionWrapper div
+    document.write('<div class="row col-xs-12 fullCourseDescriptionWrapper">');
+    document.write('<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo">' + courseDescription + '</div></div></div>'); // close fullCourseDescriptionWrapper div
 
 
 
