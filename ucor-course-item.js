@@ -11,7 +11,7 @@
 *
 *     Document will write once when the page loads
 *
-*     @version 2.4
+*     @version 2.5
 */
 
 
@@ -35,7 +35,10 @@ try {
 
 
     /* -- Derive the Course Title -- */
-    var courseTitle = prefix + " " + courseName;
+    // var courseTitle = prefix + " " + courseName;
+    // var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
+    var courseTitle = + contentItemName;
+
 
 
     /* -- Wrap the content fields -- */
