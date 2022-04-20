@@ -38,7 +38,7 @@ try {
 
 
     /* -- Derive the Course Title -- */
-    var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
+    var courseTitle = prefix + " " + courseNumber + " " + courseName;
 
 
     /* -- Wrap the content fields -- */
