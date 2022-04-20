@@ -32,12 +32,15 @@ try {
     var comments = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="UCOR Comments" output="normal" modifiers="striptags,htmlentities" />');
     var groupDescription = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="Common UCOR Course Description" output="normal" modifiers="medialibrary,nav_sections,htmlentities" />');
     var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="UCOR Keywords" output="normal" modifiers="striptags,htmlentities" />');
+    var contentId = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="meta" meta="content_id" />');
 
+
+    
 
     /* -- Derive the Course Title -- */
     // var courseTitle = prefix + " " + courseName;
     // var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
-    var courseTitle = + contentItemName;
+    var courseTitle = "" + contentItemName + "";
 
 
 
