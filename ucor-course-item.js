@@ -35,7 +35,7 @@ try {
     // var textbooks = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Textbooks' output='normal' display_field='value' />");
     var comments = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="UCOR Comments" output="normal" modifiers="striptags,htmlentities" />');
     var groupDescription = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="Common UCOR Course Description" output="normal" modifiers="medialibrary,nav_sections,htmlentities" />');
-    var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='UCOR Keywords' output='normal' display_field='value' />");
+    var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="UCOR Keywords" output="normal" modifiers="striptags,htmlentities" />');
 
 
     /* -- Derive the Course Title -- */
