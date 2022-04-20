@@ -11,7 +11,7 @@
 *
 *     Document will write once when the page loads
 *
-*     @version 1.2
+*     @version 2.0
 */
 
 
@@ -29,10 +29,10 @@ try {
     var year = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Year' output='normal' display_field='value' />");
     var faculty = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Faculty' output='normal' display_field='value' />");
     var courseDescription = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Description' output='normal' display_field='value' />");
-    var syllabus = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Syllabus' output='normal' display_field='value' />");
-    var assignments = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Assignments' output='normal' display_field='value' />");
-    var textbooks = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Textbooks' output='normal' display_field='value' />");
-    var comments = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Comments' output='normal' display_field='value' />");
+    // var syllabus = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Syllabus' output='normal' display_field='value' />");
+    // var assignments = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Assignments' output='normal' display_field='value' />");
+    // var textbooks = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Textbooks' output='normal' display_field='value' />");
+    // var comments = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Comments' output='normal' display_field='value' />");
     var groupDescription = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Common UCOR Course Description' output='normal' display_field='value' />");
     var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Keywords' output='normal' display_field='value' />");
 
@@ -91,44 +91,44 @@ try {
 
 
     /* -- Write Program Level 1 Details --*/
-    if (syllabus != "") {
-        document.write('<div class="row col-xs-12 levelOne">');
-        document.write('<div class="col-xs-12 courseDetails syllabus"><h5>Syllabus: </h5><div class="courseInfo">' + syllabus + '</div></div>');
-        document.write('</div>');
-    } else {
-        document.write('<div class="row levelOne courseDetails syllabus" style="display: none"><h5>No Syllabus Provided</h5></div>');
-    }
+    // if (syllabus != "") {
+    //     document.write('<div class="row col-xs-12 levelOne">');
+    //     document.write('<div class="col-xs-12 courseDetails syllabus"><h5>Syllabus: </h5><div class="courseInfo">' + syllabus + '</div></div>');
+    //     document.write('</div>');
+    // } else {
+    //     document.write('<div class="row levelOne courseDetails syllabus" style="display: none"><h5>No Syllabus Provided</h5></div>');
+    // }
 
 
     /* -- Write Program Level 2 Details --*/
-    if (assignments != "") {
-        document.write('<div class="row col-xs-12 levelTwo">');
-        document.write('<div class="col-xs-12 courseDetails assignments"><h5>Assignments: </h5><div class="courseInfo">' + assignments + '</div></div>');
-        document.write('</div>');
-    } else {
-        document.write('<div class="row levelTwo courseDetails assignments" style="display: none"><h5>No Assignments Provided</h5></div>');
-    }
+    // if (assignments != "") {
+    //     document.write('<div class="row col-xs-12 levelTwo">');
+    //     document.write('<div class="col-xs-12 courseDetails assignments"><h5>Assignments: </h5><div class="courseInfo">' + assignments + '</div></div>');
+    //     document.write('</div>');
+    // } else {
+    //     document.write('<div class="row levelTwo courseDetails assignments" style="display: none"><h5>No Assignments Provided</h5></div>');
+    // }
 
 
     /* -- Write Program Level 3 Details --*/
-    if (textbooks != "") {
-        document.write('<div class="row col-xs-12 levelThree">');
-        document.write('<div class="col-xs-12 courseDetails textbooks"><h5>Textbooks: </h5><div class="courseInfo">' + textbooks + '</div></div>');
-        document.write('</div>');
-    } else {
-        document.write('<div class="row levelThree courseDetails textbooks" style="display: none"><h5>No Textbooks Provided</h5></div>');
-    }
+    // if (textbooks != "") {
+    //     document.write('<div class="row col-xs-12 levelThree">');
+    //     document.write('<div class="col-xs-12 courseDetails textbooks"><h5>Textbooks: </h5><div class="courseInfo">' + textbooks + '</div></div>');
+    //     document.write('</div>');
+    // } else {
+    //     document.write('<div class="row levelThree courseDetails textbooks" style="display: none"><h5>No Textbooks Provided</h5></div>');
+    // }
 
 
     /* -- Write Program Level 4 Details --*/
     // prerequisites re-branded as Comments
-    if (comments != "") {
-        document.write('<div class="row col-xs-12 levelFour">');
-        document.write('<div class="col-xs-12 courseDetails comments"><h5>Comments: </h5><div class="courseInfo"><p>' + comments + '</p></div></div>');
-        document.write('</div>');
-    } else {
-        document.write('<div class="row levelFour courseDetails comments" style="display: none"><h5>No Comments Provided</h5></div>');
-    }
+    // if (comments != "") {
+    //     document.write('<div class="row col-xs-12 levelFour">');
+    //     document.write('<div class="col-xs-12 courseDetails comments"><h5>Comments: </h5><div class="courseInfo"><p>' + comments + '</p></div></div>');
+    //     document.write('</div>');
+    // } else {
+    //     document.write('<div class="row levelFour courseDetails comments" style="display: none"><h5>No Comments Provided</h5></div>');
+    // }
 
 
     /* -- Write Program Level 5 Details --*/
