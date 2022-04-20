@@ -1,5 +1,5 @@
 /***
-*     @author Victor Chimenti, MSCS-SE 2020
+*     @author Victor Chimenti, MSCS
 *     @file ucor-course-item.js
 *
 *     This new content type is being adapted from the existing UCOR Categorized Course content type
