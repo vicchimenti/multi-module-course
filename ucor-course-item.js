@@ -1,23 +1,4 @@
 /***
-*     @author Victor Chimenti, MSCS
-*     @file ucor-course-item.js
-*
-*     This new content type is being adapted from the existing UCOR Categorized Course content type
-*     and is intended to provide an improved searchable, sortable group of courses for the university core courses
-*     that does not require complex text entry patterns in the naming convention.
-*
-*     This content type will work in conjunction with the Organizer and each item
-*     will contain one searchable, categorizable course.
-*
-*     Document will write once when the page loads
-*
-*     @version 2.6
-*/
-
-
-
-
-/***
  *     @author  Victor Chimenti, MSCS
  *     @file    ucor-course-item.js
  *              v9/organizer/ucorCourse
