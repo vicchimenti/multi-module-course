@@ -110,6 +110,12 @@ try {
     let beginningHTML = '<div class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '"><div class="accordion-group courseItem standardContent">';
     let endingHTML = '</div></div>';
     let prefix = "UCOR";
+    let cardHeader = '<div class="card-header" id="heading' + ucorDict.contentId.content + '">';
+    let buttonLink = '<button class="btn btn-link" type="button" id="button' + ucorDict.contentId.content + '" data-toggle="collapse" data-target="#collapse' + ucorDict.contentId.content + '" aria-expanded="false" aria-controls="collapse' + ucorDict.contentId.content + '">';
+    let collapseDiv = '<div class="collapse" id="collapse' + ucorDict.contentId.content + '">';
+    let closeCollapseDiv = '</div>';
+    let openCard = '<div class="card">';
+    let closeCard = '</div>';
 
     
 
@@ -120,20 +126,9 @@ try {
 
 
 
-
-
-
-    /*  -- Parse out Runtime Generated Content IDs -- */
-    var cardHeader = '<div class="card-header" id="heading<t4 type=\'meta\' meta=\'content_id\' />">';
-    var buttonLink = '<button class="btn btn-link" type="button" id="button<t4 type=\'meta\' meta=\'content_id\' />" data-toggle="collapse" data-target="#collapse<t4 type=\'meta\' meta=\'content_id\' />" aria-expanded="false" aria-controls="collapse<t4 type=\'meta\' meta=\'content_id\' />">';
-    var collapseDiv = '<div class="collapse" id="collapse<t4 type=\'meta\' meta=\'content_id\' />">';
-
-
-
-
     /* -- Write the card header -- */
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, beginningHTML));
-    document.write('<div class="card">'); // closed individually in *** write closing tags *** found near bottom of file currently line 142
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, beginningHTML));
+    // document.write('<div class="card">'); // closed individually in *** write closing tags *** found near bottom of file currently line 142
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, cardHeader));
     document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonLink));
     document.write('<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + courseTitle + '</span></span></button>');  // close buttonLink tag here
@@ -259,6 +254,7 @@ try {
     writeDocument(
         [
             beginningHTML,
+
             openCardHeader,
             titleLink,
             subtitleString,
