@@ -86,6 +86,7 @@ try {
         year: getContentValues('<t4 type="content" name="UCOR Year" output="normal" modifiers="striptags,htmlentities" />'),
         faculty: getContentValues('<t4 type="content" name="UCOR Faculty" output="normal" modifiers="striptags,htmlentities" />'),
         courseDescription: getContentValues('<t4 type="content" name="UCOR Course Description" output="normal" modifiers="medialibrary,nav_sections,htmlentities" />'),
+        groupDescription: getContentValues('<t4 type="content" name="Common UCOR Course Description" output="normal" modifiers="medialibrary,nav_sections" />'),
 
 
         college: getContentValues('<t4 type="content" name="College" output="normal" modifiers="striptags,htmlentities" />'),
@@ -104,7 +105,6 @@ try {
     // var courseSection = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Section' output='normal' display_field='value' />");
     
     var comments =  '<t4 type="content" name="UCOR Comments" output="normal" modifiers="striptags,htmlentities" />');
-    var groupDescription =  '<t4 type="content" name="Common UCOR Course Description" output="normal" modifiers="medialibrary,nav_sections,htmlentities" />');
     var keyWords =  '<t4 type="content" name="UCOR Keywords" output="normal" modifiers="striptags,htmlentities" />');
 
 
