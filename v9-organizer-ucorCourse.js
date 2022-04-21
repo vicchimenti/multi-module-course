@@ -125,9 +125,9 @@ try {
     let closeSummaryHeader = '</div>';
     let detailsType = '<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + ucorDict.courseType.content + '</span></div>';
     let detailsFaculty = '<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + ucorDict.faculty.content + '</span></div>';
-    let detailsTerm = '<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>';
-    let detailsYear = '<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>';
-    let detailsModule = '<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div>';
+    let detailsTerm = '<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + ucorDict.term.content + '</span></div>';
+    let detailsYear = '<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + ucorDict.year.content + '</span></div>';
+    let detailsModule = '<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorDict.ucorModule.content + '</span></div>';
 
 
     /* -- Derive the Course Title -- */
@@ -222,8 +222,11 @@ try {
 
     /* -- Write Closing Tags -- */
     document.write('</div></div></div>');  // close the card-body and container-fluid and collapse div
-    document.write('</div>'); // close the card
-    document.write(endingHTML);
+
+
+
+    // document.write('</div>'); // close the card
+    // document.write(endingHTML);
 
 
 
