@@ -112,7 +112,7 @@ try {
     /* -- Derive the Course Title -- */
     // var courseTitle = prefix + " " + courseName;
     // var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
-    var courseTitle = "" + contentItemName + "";
+    let courseTitle = "" + ucorDict.contentItemName.content + "";
 
 
 
