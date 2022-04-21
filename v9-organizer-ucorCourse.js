@@ -119,34 +119,37 @@ try {
     let closeCollapseDiv = '</div>';
     let openCard = '<div class="card">';
     let closeCard = '</div>';
-
-    
+    let summaryWrapper = '<div class="col-xs-12 courseSummaryWrapper">';
+    let closeSummaryWrapper = '</div>';
+    let summaryHeader = '<div class="row col-xs-12 courseSummaryHeader">';
+    let closeSummaryHeader = '</div>';
+    let detailsType = '<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + ucorDict.courseType.content + '</span></div>';
+    let detailsFaculty = '<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + ucorDict.faculty.content + '</span></div>';
+    let detailsTerm = '<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>';
+    let detailsYear = '<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>';
 
     /* -- Derive the Course Title -- */
     // var courseTitle = prefix + " " + courseName;
     // var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
     // let courseTitle = "" + ucorDict.contentItemName.content + "";
     
-
-
-
     /* -- Write the card header -- */
     // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, beginningHTML));
     // document.write('<div class="card">'); // closed individually in *** write closing tags *** found near bottom of file currently line 142
     // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, cardHeader));
     // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonLink));
-    document.write('<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + courseTitle + '</span></span></button>');  // close buttonLink tag here
+    // document.write('<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + courseTitle + '</span></span></button>');  // close buttonLink tag here
 
 
     /* -- Write the open viewable summary header -- */
-    document.write('<div class="col-xs-12 courseSummaryWrapper">');
-    document.write('<div class="row col-xs-12 courseSummaryHeader">');
-    document.write('<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseType + '</span></div>');
-    document.write('<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div>');
-    document.write('<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
+    // document.write('<div class="col-xs-12 courseSummaryWrapper">');
+    // document.write('<div class="row col-xs-12 courseSummaryHeader">');
+    // document.write('<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseType + '</span></div>');
+    // document.write('<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div>');
+    // document.write('<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
     document.write('<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
     document.write('<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>');  // Closes courseSummaryHeader row div 
-    document.write('</div></div>'); // close courseSummaryWrapper, and card header divs
+    // document.write('</div></div>'); // close courseSummaryWrapper, and card header divs
 
 
 
@@ -264,12 +267,15 @@ try {
             titleWrapper,
             closeButton,
             closeCardHeader,
+            summaryWrapper,
+            summaryHeader,
+            detailsType,
+            detailsFaculty,
+            detailsTerm,
 
+            closeSummaryHeader,
 
-            openBodyWrapper,
-            summaryString,
-            listOfIcons,
-            closeBodyWrapper,
+            closeSummaryWrapper,
 
 
             closeCard,
