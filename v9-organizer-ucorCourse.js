@@ -342,6 +342,31 @@ try {
 
 
 
+
+
+
+    /***
+     *  write document once
+     * 
+     * */
+    writeDocument(
+        [
+            beginningHTML,
+            openCardHeader,
+            titleLink,
+            subtitleString,
+            closeCardHeader,
+            openBodyWrapper,
+            summaryString,
+            listOfIcons,
+            closeBodyWrapper,
+            endingHTML
+        ]
+    );
+
+
+
+
     /* -- Error Checking -- */
 } catch (err) {
     document.write(err.message);
