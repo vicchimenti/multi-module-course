@@ -8,7 +8,7 @@
  *
  *     Document will write once when the page loads
  *
- *     @version 2.6.1
+ *     @version 2.6.2
  */
 
 
@@ -93,14 +93,6 @@ try {
 
     };
 
-
-
-
-
-
-
-
-    /* -- Initialize function scope variables -- */
     
     var contentItemName = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />');
     var ucorModule = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="UCOR Module" output="normal" modifiers="striptags,htmlentities" />');
@@ -116,6 +108,11 @@ try {
     var groupDescription = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="Common UCOR Course Description" output="normal" modifiers="medialibrary,nav_sections,htmlentities" />');
     var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="UCOR Keywords" output="normal" modifiers="striptags,htmlentities" />');
     var contentId = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="meta" meta="content_id" />');
+
+
+
+
+
 
 
 
