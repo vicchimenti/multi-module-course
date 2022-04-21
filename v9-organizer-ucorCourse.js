@@ -111,6 +111,7 @@ try {
     let endingHTML = '</div></div>';
     let prefix = "UCOR";
     let cardHeader = '<div class="card-header" id="heading' + ucorDict.contentId.content + '">';
+    let closeCardHeader = '</div>';
     let buttonLink = '<button class="btn btn-link" type="button" id="button' + ucorDict.contentId.content + '" data-toggle="collapse" data-target="#collapse' + ucorDict.contentId.content + '" aria-expanded="false" aria-controls="collapse' + ucorDict.contentId.content + '">';
     let collapseDiv = '<div class="collapse" id="collapse' + ucorDict.contentId.content + '">';
     let closeCollapseDiv = '</div>';
@@ -257,15 +258,20 @@ try {
             openCard,
             cardHeader,
 
-            
 
-            titleLink,
-            subtitleString,
+
+
             closeCardHeader,
+
+            
             openBodyWrapper,
             summaryString,
             listOfIcons,
             closeBodyWrapper,
+
+
+            closeCard,
+
             endingHTML
         ]
     );
