@@ -254,8 +254,11 @@ try {
     writeDocument(
         [
             beginningHTML,
+            openCard,
+            cardHeader,
 
-            openCardHeader,
+            
+
             titleLink,
             subtitleString,
             closeCardHeader,
