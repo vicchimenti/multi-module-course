@@ -103,7 +103,6 @@ try {
     /* -- Initialize function scope variables -- */
     
     var contentItemName = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />');
-    var prefix = "UCOR";
     var ucorModule = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="UCOR Module" output="normal" modifiers="striptags,htmlentities" />');
     var courseType = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="UCOR Course Type" output="normal" modifiers="striptags,htmlentities" />');
     // var courseNumber = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Number' output='normal' display_field='value' />");
@@ -118,6 +117,9 @@ try {
     var keyWords = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="content" name="UCOR Keywords" output="normal" modifiers="striptags,htmlentities" />');
     var contentId = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="meta" meta="content_id" />');
 
+
+
+    let prefix = "UCOR";
 
     
 
