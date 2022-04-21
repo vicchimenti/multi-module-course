@@ -344,6 +344,31 @@ try {
 
 
 
+    /***
+     *  define subtitle
+     * 
+     * */
+    let subtitleString = (cejscDict.subjectDescription.content && cejscDict.college.content && cejscDict.academicLevel.content) ?
+        '<p class="card-subtitle">' + subjectString + ' | ' + collegeString + ' | ' + academicLevelString + '</p>' :
+        (cejscDict.subjectDescription.content && cejscDict.college.content && !cejscDict.academicLevel.content) ?
+        '<p class="card-subtitle">' + subjectString + ' | ' + collegeString + '</p>' :
+        (cejscDict.subjectDescription.content && !cejscDict.college.content && cejscDict.academicLevel.content) ?
+        '<p class="card-subtitle">' + subjectString + ' | ' + academicLevelString + '</p>' :
+        (!cejscDict.subjectDescription.content && cejscDict.college.content && cejscDict.academicLevel.content) ?
+        '<p class="card-subtitle">' + collegeString + ' | ' + academicLevelString + '</p>' :
+        (!cejscDict.subjectDescription.content && !cejscDict.college.content && cejscDict.academicLevel.content) ?
+        '<p class="card-subtitle">' + academicLevelString + '</p>' :
+        (!cejscDict.subjectDescription.content && cejscDict.college.content && !cejscDict.academicLevel.content) ?
+        '<p class="card-subtitle">' + collegeString + '</p>' :
+        (cejscDict.subjectDescription.content && !cejscDict.college.content && !cejscDict.academicLevel.content) ?
+        '<p class="card-subtitle">' + subjectString + '</p>' :
+        '<span class="card-subtitle visually-hidden hidden">No valid subtitle provided</span>';
+
+
+
+
+
+
 
     /***
      *  write document once
