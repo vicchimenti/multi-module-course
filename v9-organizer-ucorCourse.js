@@ -110,9 +110,11 @@ try {
     let beginningHTML = '<div class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '"><div class="accordion-group courseItem standardContent">';
     let endingHTML = '</div></div>';
     let prefix = "UCOR";
-    let cardHeader = '<div class="card-header" id="heading' + ucorDict.contentId.content + '">';
-    let closeCardHeader = '</div>';
+    let cardHeader = '<h3 class="card-title" id="heading' + ucorDict.contentId.content + '">';
+    let closeCardHeader = '</h3>';
     let buttonLink = '<button class="btn btn-link" type="button" id="button' + ucorDict.contentId.content + '" data-toggle="collapse" data-target="#collapse' + ucorDict.contentId.content + '" aria-expanded="false" aria-controls="collapse' + ucorDict.contentId.content + '">';
+    let closeButton = '</button>';
+    let titleWrapper = '<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + ucorDict.contentItemName.content + '</span></span>';
     let collapseDiv = '<div class="collapse" id="collapse' + ucorDict.contentId.content + '">';
     let closeCollapseDiv = '</div>';
     let openCard = '<div class="card">';
@@ -123,8 +125,8 @@ try {
     /* -- Derive the Course Title -- */
     // var courseTitle = prefix + " " + courseName;
     // var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
-    let courseTitle = "" + ucorDict.contentItemName.content + "";
-    <span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + courseTitle + '</span></span></button>'
+    // let courseTitle = "" + ucorDict.contentItemName.content + "";
+    
 
 
 
@@ -259,10 +261,8 @@ try {
             openCard,
             cardHeader,
             buttonLink,
-
-
-
-
+            titleWrapper,
+            closeButton,
             closeCardHeader,
 
 
