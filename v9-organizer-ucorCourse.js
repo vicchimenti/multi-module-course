@@ -124,14 +124,15 @@ try {
     // var courseTitle = prefix + " " + courseName;
     // var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
     let courseTitle = "" + ucorDict.contentItemName.content + "";
+    <span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + courseTitle + '</span></span></button>'
 
 
 
     /* -- Write the card header -- */
     // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, beginningHTML));
     // document.write('<div class="card">'); // closed individually in *** write closing tags *** found near bottom of file currently line 142
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, cardHeader));
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonLink));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, cardHeader));
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, buttonLink));
     document.write('<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + courseTitle + '</span></span></button>');  // close buttonLink tag here
 
 
@@ -257,13 +258,14 @@ try {
             beginningHTML,
             openCard,
             cardHeader,
+            buttonLink,
 
 
 
 
             closeCardHeader,
 
-            
+
             openBodyWrapper,
             summaryString,
             listOfIcons,
