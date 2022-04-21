@@ -21,10 +21,10 @@
 /***
  *      Import T4 Utilities
  */
-    importClass(com.terminalfour.media.IMediaManager);
+    // importClass(com.terminalfour.media.IMediaManager);
     importClass(com.terminalfour.spring.ApplicationContextProvider);
     importClass(com.terminalfour.publish.utils.BrokerUtils);
-    importClass(com.terminalfour.media.utils.ImageInfo);
+    // importClass(com.terminalfour.media.utils.ImageInfo);
 
 
 
@@ -54,17 +54,17 @@
     /***
      *      Returns an array of list items
      */
-    function assignList(arrayOfValues) {
+    // function assignList(arrayOfValues) {
 
-        let listValues = '';
+    //     let listValues = '';
 
-        for (let i = 0; i < arrayOfValues.length; i++) {
+    //     for (let i = 0; i < arrayOfValues.length; i++) {
 
-            listValues += '<li class="list-group-item sdgIcon">' + arrayOfValues[i].trim() + '</li>';
-        }
+    //         listValues += '<li class="list-group-item sdgIcon">' + arrayOfValues[i].trim() + '</li>';
+    //     }
 
-        return listValues;
-    }
+    //     return listValues;
+    // }
 
 
 
@@ -72,13 +72,13 @@
     /***
      *      Returns a media object
      */
-    function getMediaInfo(mediaID) {
+    // function getMediaInfo(mediaID) {
 
-        let mediaManager = ApplicationContextProvider.getBean(IMediaManager);
-        let media = mediaManager.get(mediaID, language);
+    //     let mediaManager = ApplicationContextProvider.getBean(IMediaManager);
+    //     let media = mediaManager.get(mediaID, language);
 
-        return media;
-    }
+    //     return media;
+    // }
 
 
 
@@ -86,34 +86,13 @@
     /***
      *      Returns a media stream object
      */
-    function readMedia(mediaID) {
+    // function readMedia(mediaID) {
 
-        let mediaObj = getMediaInfo(mediaID);
-        let oMediaStream = mediaObj.getMedia();
+    //     let mediaObj = getMediaInfo(mediaID);
+    //     let oMediaStream = mediaObj.getMedia();
 
-        return oMediaStream;
-    }
-
-
-
-
-    /***
-     *      Returns a formatted html img tag
-     */
-    function mediaTag(itemId) {
-
-        let mediaPath = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="media" formatter="path/*" id="' + itemId + '" />');
-        let mediaInfo = getMediaInfo(itemId);
-        let media = readMedia(itemId);
-        let info = new ImageInfo;
-        info.setInput(media);
-
-        let mediaHTML = (info.check()) ?
-            '<figure class="figure"><img src="' + mediaPath + '" class="listgroupImage figure-img img-fluid" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" /></figure><figcaption class="figure-caption visually-hidden hidden">' + mediaInfo.getName() + '</figcaption>' :
-            '<span class="listgroupImage visually-hidden hidden">Invalid Image ID</span>';
-
-        return mediaHTML;
-    }
+    //     return oMediaStream;
+    // }
 
 
 
@@ -121,17 +100,38 @@
     /***
      *      Returns a formatted html img tag
      */
-    function getTarget(itemId) {
+    // function mediaTag(itemId) {
 
-        let mediaInfo = getMediaInfo(itemId);
-        let media = readMedia(itemId);
-        let info = new ImageInfo;
-        info.setInput(media);
+    //     let mediaPath = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, '<t4 type="media" formatter="path/*" id="' + itemId + '" />');
+    //     let mediaInfo = getMediaInfo(itemId);
+    //     let media = readMedia(itemId);
+    //     let info = new ImageInfo;
+    //     info.setInput(media);
 
-        let target = (info.check()) ? '' + mediaInfo.getName() + '' : null;
+    //     let mediaHTML = (info.check()) ?
+    //         '<figure class="figure"><img src="' + mediaPath + '" class="listgroupImage figure-img img-fluid" aria-label="' + mediaInfo.getName() + '" alt="' + mediaInfo.getDescription() + '" width="' + info.getWidth() + '" height="' + info.getHeight() + '" loading="auto" /></figure><figcaption class="figure-caption visually-hidden hidden">' + mediaInfo.getName() + '</figcaption>' :
+    //         '<span class="listgroupImage visually-hidden hidden">Invalid Image ID</span>';
 
-        return target;
-    }
+    //     return mediaHTML;
+    // }
+
+
+
+
+    /***
+     *      Returns a formatted html img tag
+     */
+    // function getTarget(itemId) {
+
+    //     let mediaInfo = getMediaInfo(itemId);
+    //     let media = readMedia(itemId);
+    //     let info = new ImageInfo;
+    //     info.setInput(media);
+
+    //     let target = (info.check()) ? '' + mediaInfo.getName() + '' : null;
+
+    //     return target;
+    // }
 
 
 
@@ -139,20 +139,20 @@
     /***
      *      Returns an array of list items
      */
-    function formatTargets(arrayOfValues) {
+    // function formatTargets(arrayOfValues) {
 
-        let listValues = '';
+    //     let listValues = '';
 
-        for (let i = 0; i < arrayOfValues.length; i++) {
+    //     for (let i = 0; i < arrayOfValues.length; i++) {
 
-            if (arrayOfValues[i]) {
-                let cleanValue = arrayOfValues[i].replace(/\s/g, '-');
-                listValues += '' + cleanValue.trim() + ' ';
-            }
-        }
+    //         if (arrayOfValues[i]) {
+    //             let cleanValue = arrayOfValues[i].replace(/\s/g, '-');
+    //             listValues += '' + cleanValue.trim() + ' ';
+    //         }
+    //     }
 
-        return listValues;
-    }
+    //     return listValues;
+    // }
 
 
 
