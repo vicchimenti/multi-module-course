@@ -103,8 +103,12 @@ try {
 
 
 
-
-
+    /*** 
+     *  Set defaults
+     * 
+     * */
+    let beginningHTML = '<div class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '"><div class="accordion-group courseItem standardContent">';
+    let endingHTML = '</div></div>';
     let prefix = "UCOR";
 
     
@@ -116,9 +120,7 @@ try {
 
 
 
-    /* -- Wrap the content fields -- */
-    var beginningHTML = '<div class="contentItem accordion courseItemWrapper" id="id<t4 type=\'meta\' meta=\'content_id\' />"><div class="accordion-group courseItem standardContent"><t4 type=\'meta\' meta=\'html_anchor\' />';
-    var endingHTML = '</div></div>';
+
 
 
     /*  -- Parse out Runtime Generated Content IDs -- */
