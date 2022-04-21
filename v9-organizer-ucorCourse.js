@@ -110,8 +110,8 @@ try {
     let beginningHTML = '<div class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '"><div class="accordion-group courseItem standardContent">';
     let endingHTML = '</div></div>';
     let prefix = "UCOR";
-    let cardHeader = '<h3 class="card-title" id="heading' + ucorDict.contentId.content + '">';
-    let closeCardHeader = '</h3>';
+    let cardHeader = '<div class="card-title" id="heading' + ucorDict.contentId.content + '">';
+    let closeCardHeader = '</div>';
     let buttonLink = '<button class="btn btn-link" type="button" id="button' + ucorDict.contentId.content + '" data-toggle="collapse" data-target="#collapse' + ucorDict.contentId.content + '" aria-expanded="false" aria-controls="collapse' + ucorDict.contentId.content + '">';
     let closeButton = '</button>';
     let titleWrapper = '<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + ucorDict.contentItemName.content + '</span></span>';
@@ -127,6 +127,8 @@ try {
     let detailsFaculty = '<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + ucorDict.faculty.content + '</span></div>';
     let detailsTerm = '<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>';
     let detailsYear = '<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>';
+    let detailsModule = '<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div>';
+
 
     /* -- Derive the Course Title -- */
     // var courseTitle = prefix + " " + courseName;
@@ -147,8 +149,8 @@ try {
     // document.write('<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + courseType + '</span></div>');
     // document.write('<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + faculty + '</span></div>');
     // document.write('<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + term + '</span></div>');
-    document.write('<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
-    document.write('<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>');  // Closes courseSummaryHeader row div 
+    // document.write('<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + year + '</span></div>');
+    // document.write('<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorModule + '</span></div></div>');  // Closes courseSummaryHeader row div 
     // document.write('</div></div>'); // close courseSummaryWrapper, and card header divs
 
 
@@ -272,9 +274,9 @@ try {
             detailsType,
             detailsFaculty,
             detailsTerm,
-
+            detailsYear,
+            detailsModule,
             closeSummaryHeader,
-
             closeSummaryWrapper,
 
 
