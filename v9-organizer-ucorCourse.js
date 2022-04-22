@@ -178,8 +178,8 @@ try {
 
 
     /* -- Write the collapsed summary header -- */
-    document.write('<div class="row col-xs-12 fullCourseDescriptionWrapper">');
-    document.write('<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo">' + courseDescription + '</div></div></div>'); // close fullCourseDescriptionWrapper div
+    // document.write('<div class="row col-xs-12 fullCourseDescriptionWrapper">');
+    // document.write('<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo">' + courseDescription + '</div></div></div>'); // close fullCourseDescriptionWrapper div
 
 
 
@@ -297,8 +297,6 @@ try {
             openContainer,
             descriptionWrapper,
             descriptionString,
-
-
             closeDescriptionWrapper,
 
 
