@@ -142,7 +142,7 @@ try {
 
 
     let descriptionString = (courseDescription)
-                            ? '<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo"><p>' + ucorDict.courseDescription.content + '</p></div></div>'
+                            ? '<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo">' + ucorDict.courseDescription.content + '</div></div>'
                             : '<span class="courseDetails courseDescriptions hidden visually-hidden">No valid description provided</span>';
 
 
