@@ -104,7 +104,7 @@ try {
 
 
     /*** 
-     *  Set defaults
+     *  define html skeleton
      * 
      * */
     let beginningHTML = '<div class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '"><div class="accordion-group courseItem standardContent">';
@@ -134,6 +134,10 @@ try {
 
 
 
+    /*** 
+     *  courseType asssignment
+     * 
+     * */
     let detailsType =   (ucorDict.courseType.content)
                         ? '<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + ucorDict.courseType.content + '</span></div>'
                         : '<span class="courseDetails courseTypes">No valid type provided</span>';
@@ -141,6 +145,10 @@ try {
 
 
 
+    /*** 
+     *  faculty asssignment
+     * 
+     * */
     let detailsFaculty =    (ucorDict.faculty.content)
                             ? '<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + ucorDict.faculty.content + '</span></div>'
                             : '<span class="courseDetails instructors">No valid faculty provided</span>';
@@ -357,8 +365,6 @@ try {
             commentString,
             groupDescriptionString,
             keywordString,
-
-
             closeContainer,
             closeCardBody,
             closeCollapseDiv,
