@@ -162,12 +162,12 @@ try {
 
 
     /**** * -- Write the collapsible body -- **** */
-    document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, collapseDiv));  // closed in *** write closing tags ***
+    // document.write(com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, collapseDiv));  // closed in *** write closing tags ***
 
 
     /* -- Write Program Cards--*/
-    document.write('<div class="card-body">');
-    document.write('<div class="container-fluid">');
+    // document.write('<div class="card-body">');
+    // document.write('<div class="container-fluid">');
 
 
     /* -- Write the collapsed summary header -- */
