@@ -8,7 +8,7 @@
  *
  *     Document will write once when the page loads
  *
- *     @version 2.6.6
+ *     @version 2.6.7
  */
 
 
@@ -91,14 +91,7 @@ try {
         keywords: getContentValues('<t4 type="content" name="UCOR Keywords" output="normal" modifiers="striptags,htmlentities" />'),
         contentId: getContentValues('<t4 type="meta" meta="content_id" />')
 
-    };
-
-    
-    // var courseNumber = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Number' output='normal' display_field='value' />");
-    // var courseSection = com.terminalfour.publish.utils.BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, "<t4 type='content' name='Section' output='normal' display_field='value' />");
-    
-
-
+    };    
 
 
 
@@ -233,14 +226,6 @@ try {
 
 
 
-    
-
-
-
-
-
-
-
     /***
      *  write document once
      * 
@@ -283,7 +268,10 @@ try {
 
 
 
-    /* -- Error Checking -- */
+/***
+ *  catch errors
+ * 
+ * */
 } catch (err) {
     document.write(err.message);
 }
