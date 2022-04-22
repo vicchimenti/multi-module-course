@@ -152,6 +152,17 @@ try {
                         ? '<div class="row col-xs-12 levelFour"><div class="col-xs-12 courseDetails comments"><h5>Comments: </h5><div class="courseInfo"><p>' + comments + '</p></div></div></div>'
                         : '<span class="courseDetails comments hidden visually-hidden">No valid comments provided</span>';
 
+
+
+
+    let groupDescriptionString =    (groupDescription)
+                                    ?
+                                    :;
+
+
+
+
+
     /* -- Derive the Course Title -- */
     // var courseTitle = prefix + " " + courseName;
     // var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
@@ -200,13 +211,13 @@ try {
 
     /* -- Write Program Level 4 Details --*/
     // prerequisites re-branded as Comments
-    if (comments != "") {
-        document.write('<div class="row col-xs-12 levelFour">');
-        document.write('<div class="col-xs-12 courseDetails comments"><h5>Comments: </h5><div class="courseInfo"><p>' + comments + '</p></div></div>');
-        document.write('</div>');
-    } else {
-        document.write('<div class="row levelFour courseDetails comments" style="display: none"><h5>No Comments Provided</h5></div>');
-    }
+    // if (comments != "") {
+    //     document.write('<div class="row col-xs-12 levelFour">');
+    //     document.write('<div class="col-xs-12 courseDetails comments"><h5>Comments: </h5><div class="courseInfo"><p>' + comments + '</p></div></div>');
+    //     document.write('</div>');
+    // } else {
+    //     document.write('<div class="row levelFour courseDetails comments" style="display: none"><h5>No Comments Provided</h5></div>');
+    // }
 
 
     /* -- Write Program Level 5 Details --*/
