@@ -290,8 +290,10 @@ try {
             openContainer,
 
 
+            closeContainer,
+            closeCardBody,
+            closeCollapseDiv,
             closeCard,
-
             endingHTML
         ]
     );
