@@ -221,18 +221,18 @@ try {
 
 
     /* -- Write Program Level 7 Details --*/
-    if (contentItemName != "") {
-        /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
-        document.write('<div class="row col-xs-12 levelSeven">');
-        document.write('<div class="col-xs-12 courseDetails contentItemName" style="display: none"><h5>Keywords</h5><div class="courseInfo">' + contentItemName + '</div></div>');
-        document.write('</div>');
-    } else {
-        document.write('<div class="row levelSeven courseDetails contentItemName" style="display: none"><h5>No Content Item Name Provided</h5></div>');
-    }
+    // if (contentItemName != "") {
+    //     /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
+    //     document.write('<div class="row col-xs-12 levelSeven">');
+    //     document.write('<div class="col-xs-12 courseDetails contentItemName" style="display: none"><h5>Keywords</h5><div class="courseInfo">' + contentItemName + '</div></div>');
+    //     document.write('</div>');
+    // } else {
+    //     document.write('<div class="row levelSeven courseDetails contentItemName" style="display: none"><h5>No Content Item Name Provided</h5></div>');
+    // }
 
 
     /* -- Write Closing Tags -- */
-    document.write('</div></div></div>');  // close the card-body and container-fluid and collapse div
+    // document.write('</div></div></div>');  // close the card-body and container-fluid and collapse div
 
 
 
