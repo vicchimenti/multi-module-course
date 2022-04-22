@@ -321,6 +321,7 @@ try {
             descriptionString,
             closeDescriptionWrapper,
             commentString,
+            groupDescriptionString,
 
 
             closeContainer,
