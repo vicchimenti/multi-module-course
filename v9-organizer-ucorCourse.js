@@ -290,6 +290,10 @@ try {
             collapseDiv,
             cardBody,
             openContainer,
+            descriptionWrapper,
+
+
+            closeDescriptionWrapper,
 
 
             closeContainer,
