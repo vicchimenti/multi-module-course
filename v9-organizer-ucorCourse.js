@@ -149,15 +149,15 @@ try {
 
 
     let commentString = (comments)
-                        ? '<div class="row col-xs-12 levelFour"><div class="col-xs-12 courseDetails comments"><h5>Comments: </h5><div class="courseInfo"><p>' + comments + '</p></div></div></div>'
+                        ? '<div class="row col-xs-12 levelFour"><div class="col-xs-12 courseDetails comments"><h5>Comments: </h5><div class="courseInfo"><p>' + ucorDict.comments.content + '</p></div></div></div>'
                         : '<span class="courseDetails comments hidden visually-hidden">No valid comments provided</span>';
 
 
 
 
     let groupDescriptionString =    (groupDescription)
-                                    ?
-                                    :;
+                                    ? '<div class="row col-xs-12 levelFive"><div class="col-xs-12 courseDetails groupDescription"><h5>Common UCOR Course Description: </h5><div class="courseInfo">' + ucorDict.groupDescription.content + '</div></div></div>'
+                                    : '<span class="courseDetails groupDescription hidden visually-hidden">No valid comments provided</span>';
 
 
 
