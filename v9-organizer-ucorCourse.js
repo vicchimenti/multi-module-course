@@ -134,10 +134,23 @@ try {
 
 
 
-    let detailsType = '<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + ucorDict.courseType.content + '</span></div>';
-    let detailsFaculty = '<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + ucorDict.faculty.content + '</span></div>';
-    let detailsTerm = '<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + ucorDict.term.content + '</span></div>';
+    let detailsType =   (ucorDict.courseType.content)
+                        ? '<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + ucorDict.courseType.content + '</span></div>'
+                        : '<span class="courseDetails courseTypes">No valid type provided</span>';
 
+
+
+
+    let detailsFaculty =    (ucorDict.faculty.content)
+                            ? '<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + ucorDict.faculty.content + '</span></div>'
+                            : '<span class="courseDetails instructors">No valid faculty provided</span>';
+
+
+
+
+    let detailsTerm =   (ucorDict.term.content)
+                        ? '<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + ucorDict.term.content + '</span></div>'
+                        : '<span class="courseDetails terms">No valid term provided</span>';
 
 
 
