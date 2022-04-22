@@ -136,6 +136,11 @@ try {
     let detailsModule = '<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorDict.ucorModule.content + '</span></div>';
 
 
+    let descriptionString = courseDescription
+                            ? '<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo"><p>' + ucorDict.courseDescription.content + '</p></div></div>'
+                            : '<span class="courseDetails courseDescriptions hidden visually-hidden">No valid description provided</span>';
+
+
     /* -- Derive the Course Title -- */
     // var courseTitle = prefix + " " + courseName;
     // var courseTitle = prefix + " " + courseNumber + "-" + courseSection + " " + courseName;
@@ -291,6 +296,7 @@ try {
             cardBody,
             openContainer,
             descriptionWrapper,
+            descriptionString,
 
 
             closeDescriptionWrapper,
