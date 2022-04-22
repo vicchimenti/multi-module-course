@@ -162,6 +162,12 @@ try {
 
 
 
+    let keywordString = (keywords)
+                        ? '<div class="courseDetails keyWords hidden visually-hidden"><span class="courseInfo hidden visually-hidden">' + ucorDict.keywords.content + '</span></div>'
+                        : '<span class="courseDetails keyWords hidden visually-hidden">No valid keywords provided</span>';
+
+
+
 
     /* -- Derive the Course Title -- */
     // var courseTitle = prefix + " " + courseName;
@@ -322,6 +328,7 @@ try {
             closeDescriptionWrapper,
             commentString,
             groupDescriptionString,
+            keywordString,
 
 
             closeContainer,
