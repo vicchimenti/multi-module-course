@@ -194,7 +194,7 @@ try {
      * 
      * */
     let descriptionString = (ucorDict.courseDescription.content)
-                            ? '<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo">' + ucorDict.courseDescription.content + '</div></div>'
+                            ? '<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo"><p>' + ucorDict.courseDescription.content + '</p></div></div>'
                             : '<span class="courseDetails courseDescriptions hidden visually-hidden">No valid description provided</span>';
 
 
@@ -216,7 +216,7 @@ try {
      * 
      * */
     let groupDescriptionString =    (ucorDict.groupDescription.content)
-                                    ? '<div class="row col-xs-12 levelFive"><div class="col-xs-12 courseDetails groupDescription"><h5>Common UCOR Course Description: </h5><div class="courseInfo">' + ucorDict.groupDescription.content + '</div></div></div>'
+                                    ? '<div class="row col-xs-12 levelFive"><div class="col-xs-12 courseDetails groupDescription"><h5>Common UCOR Course Description: </h5><div class="courseInfo"><p>' + ucorDict.groupDescription.content + '</p></div></div></div>'
                                     : '<span class="courseDetails groupDescription hidden visually-hidden">No valid comments provided</span>';
 
 
