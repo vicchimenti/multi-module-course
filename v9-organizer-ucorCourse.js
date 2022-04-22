@@ -222,13 +222,13 @@ try {
 
     /* -- Write Program Level 5 Details --*/
     // group description re-branded as Common UCOR Course Description
-    if (groupDescription != "") {
-        document.write('<div class="row col-xs-12 levelFive">');
-        document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Common UCOR Course Description: </h5><div class="courseInfo">' + groupDescription + '</div></div>');
-        document.write('</div>');
-    } else {
-        document.write('<div class="row levelFive courseDetails groupDescription" style="display: none"><h5>No Common UCOR Course Description Provided</h5></div>');
-    }
+    // if (groupDescription != "") {
+    //     document.write('<div class="row col-xs-12 levelFive">');
+    //     document.write('<div class="col-xs-12 courseDetails groupDescription"><h5>Common UCOR Course Description: </h5><div class="courseInfo">' + groupDescription + '</div></div>');
+    //     document.write('</div>');
+    // } else {
+    //     document.write('<div class="row levelFive courseDetails groupDescription" style="display: none"><h5>No Common UCOR Course Description Provided</h5></div>');
+    // }
 
 
     /* -- Write Program Level 6 Details --*/
