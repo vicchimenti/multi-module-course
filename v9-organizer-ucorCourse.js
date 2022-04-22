@@ -123,6 +123,10 @@ try {
     let closeSummaryWrapper = '</div>';
     let summaryHeader = '<div class="row col-xs-12 courseSummaryHeader">';
     let closeSummaryHeader = '</div>';
+    let cardBody = '<div class="card-body">';
+    let closeCardBody = '</div>';
+    let openContainer = '<div class="container-fluid">';
+    let closeContainer = '</div>';
     let detailsType = '<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + ucorDict.courseType.content + '</span></div>';
     let detailsFaculty = '<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + ucorDict.faculty.content + '</span></div>';
     let detailsTerm = '<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + ucorDict.term.content + '</span></div>';
@@ -281,6 +285,9 @@ try {
             detailsModule,
             closeSummaryHeader,
             closeSummaryWrapper,
+            collapseDiv,
+            cardBody,
+            openContainer,
 
 
             closeCard,
