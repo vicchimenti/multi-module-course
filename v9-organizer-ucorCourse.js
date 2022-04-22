@@ -8,7 +8,7 @@
  *
  *     Document will write once when the page loads
  *
- *     @version 2.6.2
+ *     @version 2.6.3
  */
 
 
@@ -238,14 +238,14 @@ try {
 
 
     /* -- Write Program Level 6 Details --*/
-    if (keyWords != "") {
-        /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
-        document.write('<div class="row col-xs-12 levelSix">');
-        document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none"><h5>Keywords</h5><div class="courseInfo">' + keyWords + '</div></div>');
-        document.write('</div>');
-    } else {
-        document.write('<div class="row levelSix courseDetails keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
-    }
+    // if (keyWords != "") {
+    //     /* -- Keywords is a hidden field that is used to add searchable keywords when creating a program item but is not displayed on the live page -- */
+    //     document.write('<div class="row col-xs-12 levelSix">');
+    //     document.write('<div class="col-xs-12 courseDetails keyWords" style="display: none"><h5>Keywords</h5><div class="courseInfo">' + keyWords + '</div></div>');
+    //     document.write('</div>');
+    // } else {
+    //     document.write('<div class="row levelSix courseDetails keyWords" style="display: none"><h5>No Keywords Provided</h5></div>');
+    // }
 
 
     /* -- Write Program Level 7 Details --*/
