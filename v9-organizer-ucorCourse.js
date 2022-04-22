@@ -129,6 +129,11 @@ try {
     let closeContainer = '</div>';
     let descriptionWrapper = '<div class="row col-xs-12 fullCourseDescriptionWrapper">';
     let closeDescriptionWrapper = '</div>';
+
+
+
+
+
     let detailsType = '<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + ucorDict.courseType.content + '</span></div>';
     let detailsFaculty = '<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + ucorDict.faculty.content + '</span></div>';
     let detailsTerm = '<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + ucorDict.term.content + '</span></div>';
@@ -136,10 +141,16 @@ try {
     let detailsModule = '<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorDict.ucorModule.content + '</span></div>';
 
 
-    let descriptionString = courseDescription
+    let descriptionString = (courseDescription)
                             ? '<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo"><p>' + ucorDict.courseDescription.content + '</p></div></div>'
                             : '<span class="courseDetails courseDescriptions hidden visually-hidden">No valid description provided</span>';
 
+
+
+
+    let commentString = (comments)
+                        ? '<div class="row col-xs-12 levelFour"><div class="col-xs-12 courseDetails comments"><h5>Comments: </h5><div class="courseInfo"><p>' + comments + '</p></div></div></div>'
+                        : '<span class="courseDetails comments hidden visually-hidden">No valid comments provided</span>';
 
     /* -- Derive the Course Title -- */
     // var courseTitle = prefix + " " + courseName;
@@ -298,6 +309,7 @@ try {
             descriptionWrapper,
             descriptionString,
             closeDescriptionWrapper,
+            commentString,
 
 
             closeContainer,
