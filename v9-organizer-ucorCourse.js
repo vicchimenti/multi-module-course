@@ -8,7 +8,7 @@
  *
  *     Document will write once when the page loads
  *
- *     @version 2.6.8
+ *     @version 2.6.9
  */
 
 
@@ -22,7 +22,7 @@
  *      Import T4 Utilities
  */
 // importClass(com.terminalfour.spring.ApplicationContextProvider);
-// importClass(com.terminalfour.publish.utils.BrokerUtils);
+importClass(com.terminalfour.publish.utils.BrokerUtils);
 
 
 
