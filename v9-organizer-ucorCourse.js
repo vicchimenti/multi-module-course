@@ -1,6 +1,6 @@
 /***
  *     @author  Victor Chimenti, MSCS
- *     @file    ucor-course-item.js
+ *     @file    v9-organizer-ucorCourse.js
  *              v9/organizer/ucorCourse
  *                  id:5424
  *
