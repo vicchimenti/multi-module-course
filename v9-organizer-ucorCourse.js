@@ -8,7 +8,7 @@
  *
  *     Document will write once when the page loads
  *
- *     @version 2.6.16
+ *     @version 2.6.17
  */
 
 
@@ -81,7 +81,7 @@ try {
         contentItemName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
         courseName: getContentValues('<t4 type="content" name="UCOR Course Name" output="normal" modifiers="striptags,htmlentities" />'),
         courseNumber: getContentValues('<t4 type="content" name="UCOR Course Number" output="normal" modifiers="striptags,htmlentities" />'),
-        ucorSection: getContentValues('<t4 type="content" name="UCOR Section" output="normal" modifiers="striptags,htmlentities" />'),
+        courseSection: getContentValues('<t4 type="content" name="UCOR Section" output="normal" modifiers="striptags,htmlentities" />'),
         courseType: getContentValues('<t4 type="content" name="UCOR Course Type" output="normal" modifiers="striptags,htmlentities" />'),
         ucorModule: getContentValues('<t4 type="content" name="UCOR Module" output="normal" modifiers="striptags,htmlentities" />'),
         year: getContentValues('<t4 type="content" name="UCOR Year" output="normal" modifiers="striptags,htmlentities" />'),
@@ -109,7 +109,6 @@ try {
     let closeCardHeader = '</h3>';
     let buttonLink = '<button class="btn btn-link" type="button" id="button' + ucorDict.contentId.content + '" data-toggle="collapse" data-target="#collapse' + ucorDict.contentId.content + '" aria-expanded="false" aria-controls="collapse' + ucorDict.contentId.content + '">';
     let closeButton = '</button>';
-    let titleWrapper = '<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + ucorDict.contentItemName.content + '</span></span>';
     let collapseDiv = '<div class="collapse" id="collapse' + ucorDict.contentId.content + '">';
     let closeCollapseDiv = '</div>';
     let openCard = '<div class="card">';
@@ -124,6 +123,18 @@ try {
     let closeContainer = '</div>';
     let descriptionWrapper = '<div class="row col-xs-12 fullCourseDescriptionWrapper">';
     let closeDescriptionWrapper = '</div>';
+
+
+
+
+    /*** 
+     *  title asssignment
+     * 
+     * */
+    let titleWrapper =  (ucorDict.courseName.content && ucorDict.courseNumber.content && ucorDict.courseSection.content) ?
+                        '<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + ucorDict.courseNumber.content + '-' + ucorDict.courseSection.content + ' ' + ucorDict.courseName.content + '</span></span>'  :
+                        '<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + ucorDict.contentItemName.content + '</span></span>';
+
 
 
 
