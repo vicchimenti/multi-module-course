@@ -8,7 +8,7 @@
  *
  *     Document will write once when the page loads
  *
- *     @version 2.6.14
+ *     @version 2.6.15
  */
 
 
@@ -131,9 +131,9 @@ try {
      *  courseType asssignment
      * 
      * */
-    let detailsType =   (ucorDict.courseType.content)
-                        ? '<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + ucorDict.courseType.content + '</span></div>'
-                        : '<span class="courseDetails courseTypes">No valid type provided</span>';
+    let detailsType =   (ucorDict.courseType.content) ?
+                        '<div class="col-xs-12 courseDetails courseTypes"><h4>Course Type: </h4><span class="courseType">' + ucorDict.courseType.content + '</span></div>' :
+                        '<span class="courseDetails courseTypes">No valid type provided</span>';
 
 
 
@@ -142,9 +142,9 @@ try {
      *  faculty asssignment
      * 
      * */
-    let detailsFaculty =    (ucorDict.faculty.content)
-                            ? '<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + ucorDict.faculty.content + '</span></div>'
-                            : '<span class="courseDetails instructors">No valid faculty provided</span>';
+    let detailsFaculty =    (ucorDict.faculty.content) ?
+                            '<div class="col-xs-12 col-sm-3 courseDetails instructors"><h5>Faculty: </h5><span class="faculty">' + ucorDict.faculty.content + '</span></div>' :
+                            '<span class="courseDetails instructors">No valid faculty provided</span>';
 
 
 
@@ -153,9 +153,9 @@ try {
      *  term asssignment
      * 
      * */
-    let detailsTerm =   (ucorDict.term.content)
-                        ? '<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + ucorDict.term.content + '</span></div>'
-                        : '<span class="courseDetails terms">No valid term provided</span>';
+    let detailsTerm =   (ucorDict.term.content) ?
+                        '<div class="col-xs-12 col-sm-3 courseDetails terms"><h5>Term: </h5><span class="term">' + ucorDict.term.content + '</span></div>' :
+                        '<span class="courseDetails terms">No valid term provided</span>';
 
 
 
@@ -164,9 +164,9 @@ try {
      *  year asssignment
      * 
      * */
-    let detailsYear =   (ucorDict.year.content)
-                        ? '<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + ucorDict.year.content + '</span></div>'
-                        : '<span class="courseDetails years">No valid year provided</span>';
+    let detailsYear =   (ucorDict.year.content) ?
+                        '<div class="col-xs-12 col-sm-3 courseDetails years"><h5>Year: </h5><span class="year">' + ucorDict.year.content + '</span></div>' :
+                        '<span class="courseDetails years">No valid year provided</span>';
 
 
 
@@ -175,9 +175,9 @@ try {
      *  ucorModule asssignment
      * 
      * */
-    let detailsModule = (ucorDict.ucorModule.content)
-                        ? '<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorDict.ucorModule.content + '</span></div>'
-                        : '<span class="courseDetails ucorModules">No valid module provided</span>';
+    let detailsModule = (ucorDict.ucorModule.content) ?
+                        '<div class="col-xs-12 col-sm-3 courseDetails ucorModules"><h5>Module: </h5><span class="ucorModule">' + ucorDict.ucorModule.content + '</span></div>' :
+                        '<span class="courseDetails ucorModules">No valid module provided</span>';
 
 
 
@@ -186,9 +186,9 @@ try {
      *  courseDescription asssignment
      * 
      * */
-    let descriptionString = (ucorDict.courseDescription.content)
-                            ? '<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo"><p>' + ucorDict.courseDescription.content + '</p></div></div>'
-                            : '<span class="courseDetails courseDescriptions hidden visually-hidden">No valid description provided</span>';
+    let descriptionString = (ucorDict.courseDescription.content) ?
+                            '<div class="col-xs-12 courseDetails courseDescriptions"><h5>Course Description: </h5><div class="courseInfo"><p>' + ucorDict.courseDescription.content + '</p></div></div>' :
+                            '<span class="courseDetails courseDescriptions hidden visually-hidden">No valid description provided</span>';
 
 
 
@@ -197,9 +197,9 @@ try {
      *  comments asssignment
      * 
      * */
-    let commentString = (ucorDict.comments.content)
-                        ? '<div class="row col-xs-12 levelFour"><div class="col-xs-12 courseDetails comments"><h5>Comments: </h5><div class="courseInfo"><p>' + ucorDict.comments.content + '</p></div></div></div>'
-                        : '<span class="courseDetails comments hidden visually-hidden">No valid comments provided</span>';
+    let commentString = (ucorDict.comments.content) ?
+                        '<div class="row col-xs-12 levelFour"><div class="col-xs-12 courseDetails comments"><h5>Comments: </h5><div class="courseInfo"><p>' + ucorDict.comments.content + '</p></div></div></div>' :
+                        '<span class="courseDetails comments hidden visually-hidden">No valid comments provided</span>';
 
 
 
@@ -208,9 +208,9 @@ try {
      *  groupDescription asssignment
      * 
      * */
-    let groupDescriptionString =    (ucorDict.groupDescription.content)
-                                    ? '<div class="row col-xs-12 levelFive"><div class="col-xs-12 courseDetails groupDescription"><h5>Common UCOR Course Description: </h5><div class="courseInfo"><p>' + ucorDict.groupDescription.content + '</p></div></div></div>'
-                                    : '<span class="courseDetails groupDescription hidden visually-hidden">No valid comments provided</span>';
+    let groupDescriptionString =    (ucorDict.groupDescription.content) ?
+                                    '<div class="row col-xs-12 levelFive"><div class="col-xs-12 courseDetails groupDescription"><h5>Common UCOR Course Description: </h5><div class="courseInfo"><p>' + ucorDict.groupDescription.content + '</p></div></div></div>' :
+                                    '<span class="courseDetails groupDescription hidden visually-hidden">No valid comments provided</span>';
 
 
 
@@ -219,9 +219,9 @@ try {
      *  keywords asssignment
      * 
      * */
-    let keywordString = (ucorDict.keywords.content)
-                        ? '<div class="courseDetails keyWords hidden visually-hidden"><span class="courseInfo hidden visually-hidden">' + ucorDict.keywords.content + '</span></div>'
-                        : '<span class="courseDetails keyWords hidden visually-hidden">No valid keywords provided</span>';
+    let keywordString = (ucorDict.keywords.content) ?
+                        '<div class="courseDetails keyWords hidden visually-hidden"><span class="courseInfo hidden visually-hidden">' + ucorDict.keywords.content + '</span></div>' :
+                        '<span class="courseDetails keyWords hidden visually-hidden">No valid keywords provided</span>';
 
 
 
