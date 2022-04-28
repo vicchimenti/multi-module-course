@@ -35,7 +35,7 @@ function getContentValues(tag) {
         let _tag = BrokerUtils.processT4Tags(dbStatement, publishCache, section, content, language, isPreview, tag).trim();
         return {
             isError: false,
-            content: _tag === '' ? null : _tag
+            content: _tag == '' ? null : _tag
         };
     } catch (error) {
         return {
