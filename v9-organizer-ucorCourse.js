@@ -132,7 +132,7 @@ try {
      * 
      * */
     let titleWrapper =  (ucorDict.courseName.content && ucorDict.courseNumber.content && ucorDict.courseSection.content) ?
-                        '<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + ucorDict.courseNumber.content + '-' + ucorDict.courseSection.content + ' ' + ucorDict.courseName.content + '</span></span>'  :
+                        '<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + ucorDict.courseNumber.content + '-' + ucorDict.courseSection.content + ' ' + ucorDict.courseName.content + '</span></span>' :
                         '<span class="courseTitleWrapper"><i class="fas fa-minus"></i><i class="fas fa-plus"></i><span class="courseTitle">' + ucorDict.contentItemName.content + '</span></span>';
 
 
