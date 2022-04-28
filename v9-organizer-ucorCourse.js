@@ -8,7 +8,7 @@
  *
  *     Document will write once when the page loads
  *
- *     @version 2.6.12
+ *     @version 2.6.13
  */
 
 
@@ -85,7 +85,7 @@ try {
         term: getContentValues('<t4 type="content" name="UCOR Term" output="normal" modifiers="striptags,htmlentities" />'),
         year: getContentValues('<t4 type="content" name="UCOR Year" output="normal" modifiers="striptags,htmlentities" />'),
         faculty: getContentValues('<t4 type="content" name="UCOR Faculty" output="normal" modifiers="striptags,htmlentities" />'),
-        courseDescription: getContentValues('<t4 type="content" name="UCOR Course Description" output="normal" modifiers="medialibrary,nav_sections,htmlentities" />'),
+        courseDescription: getContentValues('<t4 type="content" name="UCOR Course Description" output="normal" modifiers="medialibrary,nav_sections" />'),
         groupDescription: getContentValues('<t4 type="content" name="Common UCOR Course Description" output="normal" modifiers="medialibrary,nav_sections" />'),
         comments: getContentValues('<t4 type="content" name="UCOR Comments" output="normal" modifiers="striptags,htmlentities" />'),
         keywords: getContentValues('<t4 type="content" name="UCOR Keywords" output="normal" modifiers="striptags,htmlentities" />'),
