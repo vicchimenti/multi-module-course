@@ -81,7 +81,7 @@ try {
         contentItemName: getContentValues('<t4 type="content" name="Name" output="normal" modifiers="striptags,htmlentities" />'),
         courseName: getContentValues('<t4 type="content" name="UCOR Course Name" output="normal" modifiers="striptags,htmlentities" />'),
         courseNumber: getContentValues('<t4 type="content" name="UCOR Course Number" output="normal" modifiers="striptags,htmlentities" />'),
-        
+        ucorSection: getContentValues('<t4 type="content" name="UCOR Section" output="normal" modifiers="striptags,htmlentities" />'),
         courseType: getContentValues('<t4 type="content" name="UCOR Course Type" output="normal" modifiers="striptags,htmlentities" />'),
         ucorModule: getContentValues('<t4 type="content" name="UCOR Module" output="normal" modifiers="striptags,htmlentities" />'),
         year: getContentValues('<t4 type="content" name="UCOR Year" output="normal" modifiers="striptags,htmlentities" />'),
