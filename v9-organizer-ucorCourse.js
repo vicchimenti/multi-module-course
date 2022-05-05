@@ -8,7 +8,7 @@
  *
  *     Document will write once when the page loads
  *
- *     @version 2.6.19
+ *     @version 2.7
  */
 
 
@@ -102,8 +102,7 @@ try {
      *  define html skeleton
      * 
      * */
-    let beginningHTML = '<div class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '"><div class="accordion-group courseItem standardContent">';
-    let endingHTML = '</div></div>';
+    let endingHTML = '</div></article>';
     let prefix = "UCOR";
     let cardHeader = '<h3 class="card-title" id="heading' + ucorDict.contentId.content + '">';
     let closeCardHeader = '</h3>';
@@ -123,6 +122,13 @@ try {
     let closeContainer = '</div>';
     let descriptionWrapper = '<div class="row col-xs-12 fullCourseDescriptionWrapper">';
     let closeDescriptionWrapper = '</div>';
+
+
+
+
+    let beginningHTML = (ucorDict.courseName.content) ?
+                        '<article class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '" role="contentinfo" aria-label="' + ucorDict.courseName.content + '"><div class="accordion-group courseItem standardContent">' :
+                        '<article class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '" role="contentinfo" aria-label="' + ucorDict.contentItemName.content + '"><div class="accordion-group courseItem standardContent">';
 
 
 
