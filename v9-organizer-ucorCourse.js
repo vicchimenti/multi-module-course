@@ -8,7 +8,7 @@
  *
  *     Document will write once when the page loads
  *
- *     @version 2.7
+ *     @version 2.7.1
  */
 
 
@@ -126,8 +126,8 @@ try {
 
 
 
-    let beginningHTML = (ucorDict.courseName.content) ?
-                        '<article class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '" role="contentinfo" aria-label="' + ucorDict.courseName.content + '"><div class="accordion-group courseItem standardContent">' :
+    let beginningHTML = (ucorDict.courseName.content && ucorDict.courseNumber.content && ucorDict.courseSection.content) ?
+                        '<article class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '" role="contentinfo" aria-label="' + ucorDict.courseName.content + ' ' + ucorDict.courseNumber.content + '-' + ucorDict.courseSection.content + '"><div class="accordion-group courseItem standardContent">' :
                         '<article class="courseItemWrapper accordion" id="ucor' + ucorDict.contentId.content + '" role="contentinfo" aria-label="' + ucorDict.contentItemName.content + '"><div class="accordion-group courseItem standardContent">';
 
 
