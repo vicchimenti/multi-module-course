@@ -7,6 +7,12 @@ span {
     font-weight: 500;
 }
 
+span.courseTitleWrapper span.courseTitle {
+    color: #aa0000;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
 p {
     color: black;
     font-family: sans-serif;
